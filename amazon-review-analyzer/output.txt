@@ -1,0 +1,25 @@
+1. Total number of records: 34625
+
+2. Top 10 reviewers:
+ReviewerId: A281NPSIMI1C2R, ReviewerName: Rebecca of Amazon "The Rebecca Review", Reviews: 19
+ReviewerId: A1M04H40ZVGWVG, ReviewerName: Laura M. Rowell "Mystery Lover", Reviews: 9
+ReviewerId: A3M174IC0VXOS2, ReviewerName: Gail Cooke, Reviews: 9
+ReviewerId: A3KEZLJ59C1JVH, ReviewerName: Melissa Niksic, Reviews: 8
+ReviewerId: ALQGOMOY1F5X9, ReviewerName: scott, Reviews: 8
+ReviewerId: A17IS2KTMUBJ52, ReviewerName: Rachael, Reviews: 7
+ReviewerId: A2V5R832QCSOMX, ReviewerName: Leanne, Reviews: 7
+ReviewerId: A3LJLRIZL38GG3, ReviewerName: Lara, Reviews: 7
+ReviewerId: A3R9H6OKZHHRJD, ReviewerName: LH422, Reviews: 7
+ReviewerId: AV6823XS14U41, ReviewerName: Kimme "Kimme", Reviews: 7
+
+3. Top 10 products:
+Product ID: B0010AZ6Q2, Reviews: 792, Average Rating: 3.01
+Product ID: B00113FENI, Reviews: 642, Average Rating: 3.52
+Product ID: B0000A1WGK, Reviews: 493, Average Rating: 3.88
+Product ID: B000IZ8KZ4, Reviews: 406, Average Rating: 3.68
+Product ID: B000LCETUO, Reviews: 323, Average Rating: 3.78
+Product ID: B0007V6PK6, Reviews: 317, Average Rating: 3.94
+Product ID: B007M81A6G, Reviews: 304, Average Rating: 3.61
+Product ID: B003E6VTW0, Reviews: 302, Average Rating: 3.59
+Product ID: B001800I44, Reviews: 289, Average Rating: 4.27
+Product ID: B000PARERW, Reviews: 257, Average Rating: 4.13
