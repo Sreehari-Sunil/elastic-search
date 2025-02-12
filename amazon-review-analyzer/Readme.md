@@ -26,8 +26,10 @@ Ensure you have Python 3 installed on your system.
    ```sh
    venv\Scripts\activate
    ```
+3. **Run the elastic search server**
+    Default port will be 'http://localhost:9200'
 
-3. **Install Required Packages**  
+4. **Install Required Packages**  
    Install the necessary dependencies from `requirements.txt`:
    ```sh
    pip install -r requirements.txt
