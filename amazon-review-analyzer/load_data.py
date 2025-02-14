@@ -66,7 +66,7 @@ def insert_data(esearch):
 
 def delete_index(esearch):
     try:
-        esearch.options(ignore_status=[400]).indices.delete(indx="reviews")
+        esearch.indices.delete(indx="reviews")
         print("Index deleted succesfully")
     except Exception as e:
         print(f"Index deletion failed due to {e}")
