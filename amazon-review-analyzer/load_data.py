@@ -18,24 +18,26 @@ def create_index(esearch):
     index_name = "reviews"
 
     # Define index settings and mappings
-    settings = {
-        "settings": {"number_of_shards": 1, "number_of_replicas": 0},
-        "mappings": {
-            "properties": {
-                "reviewerID": {"type": "keyword"},
-                "asin": {"type": "keyword"},
-                "reviewerName": {"type": "text"},
-                "helpful": {"type": "integer"},
-                "reviewText": {"type": "text"},
-                "overall": {"type": "float"},
-                "summary": {"type": "text"},
-                "unixReviewTime": {"type": "date", "format": "epoch_second"},
-                "reviewTime": {"type": "text"},
-            }
-        },
-    }
-
-    esearch.options(ignore_status=[400]).indices.create(index=index_name, body=settings)
+    try:
+        settings = {
+            "settings": {"number_of_shards": 1, "number_of_replicas": 0},
+            "mappings": {
+                "properties": {
+                    "reviewerID": {"type": "keyword"},
+                    "asin": {"type": "keyword"},
+                    "reviewerName": {"type": "text"},
+                    "helpful": {"type": "integer"},
+                    "reviewText": {"type": "text"},
+                    "overall": {"type": "float"},
+                    "summary": {"type": "text"},
+                    "unixReviewTime": {"type": "date", "format": "epoch_second"},
+                    "reviewTime": {"type": "text"},
+                }
+            },
+        }
+        esearch.indices.create(index=index_name, body=settings)
+    except Exception as e:
+        print(f"index creation failed due to {e}")
 
 
 def insert_data(esearch):
@@ -63,8 +65,11 @@ def insert_data(esearch):
 
 
 def delete_index(esearch):
-    esearch.options(ignore_status=[400]).indices.delete(index="reviews")
-    print("Index deleted succesfully")
+    try:
+        esearch.options(ignore_status=[400]).indices.delete(indx="reviews")
+        print("Index deleted succesfully")
+    except Exception as e:
+        print(f"Index deletion failed due to {e}")
 
 
 def main():
